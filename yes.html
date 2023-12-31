@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./yes_style.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">Yeeeyyyy!!</h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media.giphy.com/media/PtGsNIfHKioAMMa77H/giphy.gif" alt="Cute animated illustration">
+            </div>
+            <audio controls loop id="backgroundAudio">
+                <source src="chipichipi.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <script>
+            var audio = document.getElementById('backgroundAudio');
+            
+            // Function to play the audio
+            function playBackgroundAudio() {
+                audio.play();
+            }
+
+            // Play the audio once the page has loaded
+            window.addEventListener('load', function() {
+                // Uncomment the following line if you want it to play automatically after a short delay
+                // setTimeout(playBackgroundAudio, 1000); // Delay in milliseconds (e.g., 1000ms = 1 second)
+            });
+        </script>
+        </div>
+       
+    </body> 
+</html>
